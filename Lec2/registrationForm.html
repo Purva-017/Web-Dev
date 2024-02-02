@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+        * {
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .heading {
+            font-size: 45px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .flexbox {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            background-color: black;
+            border: 2px solid black;
+            padding: 30px;
+        }
+
+        form {
+            border: 7px solid transparent;
+            border-image: linear-gradient(45deg, red, yellow);
+            border-image-slice: 1;
+            border-radius: 10px;
+            /* will have no effect */
+        }
+
+        /* #firstname{
+            margin-right: 200px;
+        } */
+        .outerdiv {
+            border: 2px solid blue;
+        }
+
+        ::placeholder {
+            color: black;
+            font-weight: 500;
+        }
+
+        select {
+            background-color: black;
+        }
+
+        .submit {
+            background-color: black;
+            margin-left: 150px;
+            border: 2px solid white;
+            border-radius: 11px;
+            color: white;
+        }
+
+        input,
+        textarea {
+            border-radius: 8px;
+            color: black;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flexbox">
+        <form action="">
+            <div class="heading">Registration Form</div>
+            <hr>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname">
+            <br><br>
+            <label for="lastname">Last Name:</label>
+            <input type="text" name="lastname" id="lastname">
+            <br>
+            <br>
+            <label for="curyear">Current Year:</label>
+
+            <select name="Current Year" id="curyear">
+                <option value="0">Select</option>
+                <option value="fy btech">FY B.Tech</option>
+                <option value="se">SY B.Texh</option>
+                <option value="ty">TY B.Texh</option>
+            </select>
+            <br>
+            <br>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            <br>
+            <br>
+            <label for="phone">Phone No.</label>
+            <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{10}">
+            <br>
+            <br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+            <br>
+            <br>
+            <label for="curadd">Address:</label> <br>
+            <textarea name="CurrentAddress" id="curadd" cols="30" rows="10"></textarea>
+            <br>
+            <br>
+            <label for="pin">Pincode:</label>
+            <input type="number" name="pin" id="pin">
+            <br>
+            <br>
+            <label for="state">State:</label>
+            <select name="state" id="state">
+                <option value="0">Select</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="MP">MP</option>
+                <option value="Gujarat">Gujarat</option>
+            </select>
+            <br>
+            <br>
+            <label for="country">Country:</label>
+            <input name="country" id="country"></input>
+            <br>
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <br>
+            <br>
+            <label for="content">Was the content Interesting?</label>
+            <input type="range" id="content">
+            <br><br>
+            <label for="">Mode of lecture conduction:</label>
+            <input type="checkbox" name="leccond" id="mode">
+            <label for="mode">Online</label>
+            <input type="checkbox" name="leccond" id="mode2">
+            <label for="mode2">Offline</label>
+            <br><br>
+            <input type="submit" value="Register" class="submit">
+
+        </form>
+    </div>
+</body>
+
+</html>
